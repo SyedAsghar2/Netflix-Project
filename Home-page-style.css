@@ -1,3 +1,5 @@
+
+
 body {
     background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/7968847f-3da9-44b3-8bbb-13a46579881f/web/US-en-20250609-TRIFECTA-perspective_bf732f5c-4fad-4035-9f96-79f38c9579a8_large.jpg" ),
                       url("https://assets.nflxext.com/ffe/siteui/vlv3/7968847f-3da9-44b3-8bbb-13a46579881f/web/US-en-20250609-TRIFECTA-perspective_bf732f5c-4fad-4035-9f96-79f38c9579a8_large.jpg"), 
@@ -34,6 +36,13 @@ body {
 .subcription-description {
     font-size: 25px;
 }
+.logo {
+    
+    color: red;
+    font-size: 60px;
+    text-align: left;
+
+}
 
 @font-face {
   font-family: 'Netflix Sans';
@@ -42,3 +51,5 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+
