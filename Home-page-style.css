@@ -1,0 +1,44 @@
+body {
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/7968847f-3da9-44b3-8bbb-13a46579881f/web/US-en-20250609-TRIFECTA-perspective_bf732f5c-4fad-4035-9f96-79f38c9579a8_large.jpg" ),
+                      url("https://assets.nflxext.com/ffe/siteui/vlv3/7968847f-3da9-44b3-8bbb-13a46579881f/web/US-en-20250609-TRIFECTA-perspective_bf732f5c-4fad-4035-9f96-79f38c9579a8_large.jpg"), 
+                      url("https://assets.nflxext.com/ffe/siteui/vlv3/7968847f-3da9-44b3-8bbb-13a46579881f/web/US-en-20250609-TRIFECTA-perspective_bf732f5c-4fad-4035-9f96-79f38c9579a8_medium.jpg"),
+                      url("https://assets.nflxext.com/ffe/siteui/vlv3/7968847f-3da9-44b3-8bbb-13a46579881f/web/US-en-20250609-TRIFECTA-perspective_bf732f5c-4fad-4035-9f96-79f38c9579a8_small.jpg 959w");
+    font-family: 'Netflix Sans', sans-serif;
+}
+
+.background{
+    display:flex;
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+.subcription-container{
+    text-align: center;
+    color: white;
+    height: 1000px;
+    padding-left: 25%;
+    padding-right: 25%;
+
+}
+
+.subcription-title{
+    font-size: 40px;
+    margin: 100px, 100px, 500px;
+}
+
+.subcription-price{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0px, 0px, 10px;
+}
+
+.subcription-description {
+    font-size: 25px;
+}
+
+@font-face {
+  font-family: 'Netflix Sans';
+  src: url("webfontkit-20250616-143528/netflixsans-bold-webfont.woff2") format('woff2'),
+       url("webfontkit-20250616-143528/netflixsans-bold-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
