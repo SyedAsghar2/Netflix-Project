@@ -49,83 +49,22 @@ header {
 
 
 .background{
-  position: relative;
-  background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/7968847f-3da9-44b3-8bbb-13a46579881f/web/US-en-20250609-TRIFECTA-perspective_bf732f5c-4fad-4035-9f96-79f38c9579a8_large.jpg');
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
-  margin: 0;
-  height: 1000px;
-  width: 100%;
-  filter: brightness(30%); 
+    display:flex;
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+.subcription-container{
+    text-align: center;
+    color: white;
+    height: 1000px;
+    padding-left: 25%;
+    padding-right: 25%;
 
 }
 
-.header {
-  position: absolute;
-  max-width: 1000px;
-  margin: auto;
-  right: 0px;
-  left: 0px;
-  top: 0px;
-  gap: 10px;
-  Display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-
-}
-
-#logo {
-  font-family: 'Netflix Sans';
-  margin-left: 10px;
-  font-size: 50px;
-  color: Red;
-  margin-right: auto;
-}
-
-.lang {
-  font-family: 'Netflix Sans';
-  background-color: transparent;
-  color: white;
-  height: 35px;
-  width: 100px;
-}
-
-.lang-options{
-  background-color: white;
-  color: black;
-}
-
-.SignInButton {
-  font-family: 'Netflix Sans';
-  background-color: red;
-  color:white;
-  font-size: 14px;
-  height: 32px;
-  width: 80px;
-  border-radius: 5px;
-  border: none;
-  margin-right: 20px;
-}
-
-.subscription-container{
-  color: white;
-  position: absolute;
-  max-width: 650px;
-  margin: auto;
-  top: 400px;
-  right: 0px;
-  left: 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.subscription-title{
-  font-size: 55px;
-  font-weight: bold;
-  text-align: center;;
+.subcription-title{
+    font-size: 40px;
+    margin: 100px, 100px, 500px;
 }
 
 .subscription-price{
