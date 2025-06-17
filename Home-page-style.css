@@ -8,6 +8,14 @@ body {
     font-family: 'Netflix Sans', sans-serif;
 }
 
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 120px;
+  }
+
 .background{
     display:flex;
     margin-bottom: 1px;
