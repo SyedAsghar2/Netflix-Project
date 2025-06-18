@@ -24,10 +24,16 @@ header {
     padding: 20px 120px;
   }
 
+ 
+
+
+
+
   .lang {
       font-size: 15px;
       color: white;
       border: 3px solid rgb(175, 175, 175);
+      border-radius: 5px;
       padding: 10px 30px;
 
     }
@@ -76,6 +82,7 @@ header {
 
 .subcription-description {
     font-size: 25px;
+
 }
 
 @font-face {
