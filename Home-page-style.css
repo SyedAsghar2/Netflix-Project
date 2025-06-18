@@ -183,8 +183,75 @@ img {
     font-family: "Netflix Sans";
 }
 
+.tending-container {
+    max-width: 1000px;
+    margin: auto;
+    top: 775px;
+    right: 0px;
+    left: 0px;
+    position: absolute;
+}
 
+.tending-container .title {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
 
+.tending-container .movies-container {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.movies-container .movie1 {
+    height: 300px;
+    width: 214px;
+    background-image: url("https://occ-0-621-616.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABTfKPa9GQQYH9sRkSKIh8oVudq3kI3dlgj-XKXNQAnFrkkBk3h2C6UgrR2ZtrneAW-hx0MkocgffgSa2j-jYT69y1ZPp_HARZCQEO_221rIoUVhdUU5OQzamZFjcvvktpn2V.webp?r=1e7");
+    background-size: contain; 
+    background-position: contain; 
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.movies-container .movie2 {
+    height: 300px;
+    width: 214px;
+    background-image: url("https://occ-0-621-616.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABfrQ-ytQxZb4vAuUegqLRC6Mzo4qEMKBNKiYSsEqK16hUyXOUO2f7CZchxO_b4lhknmpf0C2ocJMYF1jChy3YpV3M5Osq7oVADhGKdJWQyaHA50EtvmM0TdxspGTAbQQHctr.webp?r=d36");
+    background-size: contain; 
+    background-position: contain; 
+    background-repeat: no-repeat;
+    border-radius: 10px;
+
+}
+
+.movies-container .movie3 {
+    height: 300px;
+    width: 214px;
+    background-image: url("https://occ-0-621-616.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABagezeqlB7WAWwJlmhXWKf9-aZw54m3VufCzyDLFcpKbSZh2AYZORe7bYFMX9Dk51BupVB-2tYCb5zczKHzkwTki0Q8NsfLxwMCDIb4vbY7a5fDnTQRgfi-G-w0mTmpv9x7g.webp?r=645");
+    background-size: contain; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    border-radius: 10px;
+
+}
+
+.movies-container .movie4 {
+    height: 300px;
+    width: 214px;
+    background-image: url("https://occ-0-621-616.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABSrHsOUsQgUgrNvlsG4WLYQFUKNmX8Lu_z5AGt1N2lsz-__buMhtxwFJl9TV1RvnNwF2sw8ujvpFn3hSDqhZ0GzJhIuvGQeXkOM.webp?r=863");
+    background-size: contain; 
+    background-position: left; 
+    background-repeat: no-repeat;
+    border-radius: 10px;
+
+}
+
+.movies-container .next-movies{
+    height: 30px;
+    background-color: red;
+}
 
 
 
