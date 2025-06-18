@@ -1,34 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href="Home-page-style.css" />
-  </head>
-  <header>
-    <div class="logo">NETFLIX</div>
-    <div class="lang">English</div>
-    <button class="signin">Sign In</button>
-  </header>
+      <link rel="stylesheet" href="Home-page-style.css">
 
-  <body>
-    <div class="background">
-      <div class="subcription-container">
-        <div class="subcription-title">
-          Unlimited movies, TV shows, and more
+</head>
+<body>
+
+    <div class = "background"></div>
+        <!--<img src ="https://assets.nflxext.com/ffe/siteui/vlv3/7968847f-3da9-44b3-8bbb-13a46579881f/web/US-en-20250609-TRIFECTA-perspective_bf732f5c-4fad-4035-9f96-79f38c9579a8_large.jpg">
+-->
+        <div class = "header">
+            <div id="logo" >NETFLIX</div>
+            <select class = "lang">
+                <option class ="lang-options">English</option>
+                <option class ="lang-options">Español</option>
+            </select>
+            <button class="SignInButton">Sign in</button>
         </div>
-        <div class="subcription-price">Starts at $7.99. Cancel anytime.</div>
-        <div class="subcription-description">
-          Ready to watch? Enter your email to create or restart your membership.
+        <div class = "subscription-container">
+            <div class = "subscription-title">
+                Unlimited movies, TV shows, and more
+            </div>
+            <div class = "subscription-price">
+                Starts at $7.99. Cancel anytime.
+            </div>
+            <div class = "subscription-description">
+                Ready to watch? Enter your email to create or restart your membership.
+            </div>
+            <div class = "subscription-email">
+                <form action="/action_page.php">
+                    <input type="email" id="email-inputbox">
+                    <input type="submit" value="Get Started >" id="email-button">
+                </form>
+            </div>
         </div>
-        <div class="subcription-email">
-          <form action="/action_page.php">
-            <input type="email" id="email-inputbox" />
-            <input type="submit" value="Get Started" />
-          </form>
+    <div class = "movies-back"></div>
+    <div class = "small-sub-container">
+        <div class = "popcorn"></div>
+        <div class = "purple-container">
+            <div class = "title">The Netflix you love for just $7.99.</br>
+            Get our most affordable, ad-supported plan.</div>
+            <button class = "learn-more">Learn More</button>
         </div>
-      </div>
     </div>
-  </body>
+
+    <div class = "tending-container">
+        <div class = "title"></div>
+    </div>
+
+
+</body>
 </html>
