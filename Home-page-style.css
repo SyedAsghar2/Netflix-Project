@@ -288,6 +288,40 @@ font-weight: normal;
   cursor: pointer;
 }
 
+.faq-section {
+  background-color: black;
+  color: white;
+  padding: 50px 10%;
+  font-size: 24px;
+}
+
+.faq-section h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.faq-item {
+  background-color: #2d2d2d;
+  color: white;
+  padding: 25px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border-bottom: 2px solid black;
+}
+
+.faq-item:hover {
+  background-color: #444;
+}
+
+.faq-icon {
+  font-size: 30px;
+  font-weight: bold;
+}
+
 
 @font-face {
 font-family: 'Netflix Sans';
