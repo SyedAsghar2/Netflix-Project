@@ -21,7 +21,7 @@ img {
   background-position: center; 
   background-repeat: no-repeat; 
   margin: 0;
-  height: 800px;
+  height: 1000px;
   width: 100%;
   filter: brightness(50%); 
 
@@ -80,7 +80,7 @@ img {
   position: absolute;
   max-width: 650px;
   margin: auto;
-  top: 200px;
+  top: 400px;
   right: 0px;
   left: 0px;
   display: flex;
@@ -89,7 +89,7 @@ img {
 }
 
 .subscription-title{
-  font-size: 50px;
+  font-size: 55px;
   font-weight: bold;
   text-align: center;;
 }
