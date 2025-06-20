@@ -17,11 +17,11 @@ img {
 .background{
   position: relative;
   background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/7968847f-3da9-44b3-8bbb-13a46579881f/web/US-en-20250609-TRIFECTA-perspective_bf732f5c-4fad-4035-9f96-79f38c9579a8_large.jpg');
-  background-size: cover; /* Makes the image covers the entire area, cropping excess */
-  background-position: center; /* Centers the visible part of the image */
-  background-repeat: no-repeat; /* Prevents tiling */
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
   margin: 0;
-  height: 550px;
+  height: 800px;
   width: 100%;
   filter: brightness(50%); 
 
@@ -135,7 +135,7 @@ img {
 .small-sub-container {
   color: white;
   position: absolute;
-  top: 600px;
+  top: 1000px;
   max-width: 1000px;
   margin:auto;
   right: 0px;
