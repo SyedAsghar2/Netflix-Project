@@ -1,201 +1,115 @@
 body {
-    font-family: 'Netflix Sans', sans-serif;
+  font-family: 'Netflix Sans', sans-serif;
 }
 
 html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
+margin: 0;
+padding: 0;
+width: 100%;
 }
 
 img {
-    filter: brightness(50%); 
-    width: 100%;
-    height: 100%    
+  filter: brightness(50%); 
+  width: 100%;
+  height: 100%    
 }
 
 .background{
-    position: relative;
-    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/7968847f-3da9-44b3-8bbb-13a46579881f/web/US-en-20250609-TRIFECTA-perspective_bf732f5c-4fad-4035-9f96-79f38c9579a8_large.jpg');
-    background-size: cover; /* Makes the image covers the entire area, cropping excess */
-    background-position: center; /* Centers the visible part of the image */
-    background-repeat: no-repeat; /* Prevents tiling */
-    margin: 0;
-    height: 550px;
-    width: 100%;
-    filter: brightness(50%); 
+  position: relative;
+  background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/7968847f-3da9-44b3-8bbb-13a46579881f/web/US-en-20250609-TRIFECTA-perspective_bf732f5c-4fad-4035-9f96-79f38c9579a8_large.jpg');
+  background-size: cover; /* Makes the image covers the entire area, cropping excess */
+  background-position: center; /* Centers the visible part of the image */
+  background-repeat: no-repeat; /* Prevents tiling */
+  margin: 0;
+  height: 550px;
+  width: 100%;
+  filter: brightness(50%); 
 
 }
 
 .header {
-    position: absolute;
-    max-width: 1000px;
-    margin: auto;
-    right: 0px;
-    left: 0px;
-    top: 0px;
-    gap: 10px;
-    Display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
+  position: absolute;
+  max-width: 1000px;
+  margin: auto;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  gap: 10px;
+  Display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
 
 }
 
 #logo {
-    font-family: 'Netflix Sans';
-    margin-left: 10px;
-    font-size: 50px;
-    color: Red;
-    margin-right: auto;
+  font-family: 'Netflix Sans';
+  margin-left: 10px;
+  font-size: 50px;
+  color: Red;
+  margin-right: auto;
 }
 
 .lang {
-    font-family: 'Netflix Sans';
-    background-color: transparent;
-    color: white;
-    height: 35px;
-    width: 100px;
+  font-family: 'Netflix Sans';
+  background-color: transparent;
+  color: white;
+  height: 35px;
+  width: 100px;
 }
 
- .lang-options{
-    background-color: white;
-    color: black;
- }
+.lang-options{
+  background-color: white;
+  color: black;
+}
 
 .SignInButton {
-    font-family: 'Netflix Sans';
-    background-color: red;
-    color:white;
-    font-size: 14px;
-    height: 32px;
-    width: 80px;
-    border-radius: 5px;
-    border: none;
-    margin-right: 20px;
+  font-family: 'Netflix Sans';
+  background-color: red;
+  color:white;
+  font-size: 14px;
+  height: 32px;
+  width: 80px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 20px;
 }
 
 .subscription-container{
-    color: white;
-    position: absolute;
-    max-width: 650px;
-    margin: auto;
-    top: 200px;
-    right: 0px;
-    left: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  color: white;
+  position: absolute;
+  max-width: 650px;
+  margin: auto;
+  top: 200px;
+  right: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .subscription-title{
-    font-size: 50px;
-    font-weight: bold;
-    text-align: center;;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;;
 }
 
 .subscription-price{
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0px, 0px, 10px;
+  padding: 20px;
+}
+
+.subcription-description {
     font-size: 25px;
-    font-weight: bold;
-    margin: 0px, 0px, 10px;
-    padding: 20px;
 }
-
-.subscription-description {
-    font-size: 17px;
-}
-
-#email-inputbox{
-    size: 30px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;                  
-    border: 2px solid #5d4e4f;     
-    padding: 12px 20px;            
-    width: 300px;                  
-    border-radius: 4px;            
-    font-size: 16px; 
-}
-
-#email-button{
-    background-color: red;
-    color: white;
-    height: 60px;
-    width: 200px;
-    border-radius: 10px;
-    border: none;
-    font-size: 25px; 
-    font-weight: bold;;
-}
-
-.movies-back {
-    height: 1000px;
-    background-color: black;
-}
-
-.small-sub-container {
-    color: white;
-    position: absolute;
-    top: 600px;
-    max-width: 1000px;
-    margin:auto;
-    right: 0px;
-    left: 0px;
-    display: flex;
-    gap: 10px;
-    flex-direction: row;
-}
-
-.small-sub-container .popcorn {
-    min-width: 80px;
-}
-
-.small-sub-container .purple-container {
-    min-width: 880px;
-    padding: 20px;
-    background-color: rgb(36, 1, 67 );
-    font-size: 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.small-sub-container .popcorn {
-    background-image: url("./images/popcorn.png");
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;
-}
-
-
-.purple-container .title {
-    font-size: 20px;
-    color: white;
-}
-
-.small-sub-container .purple-container .learn-more {
-    background-color: rgb(128 128 128 / 0.5);
-    color: white;
-    margin-left: auto;
-    height: 40px;
-    border-radius: 5px;
-    font-size: 15px;
-    font-family: "Netflix Sans";
-}
-
-
-
-
-
-
-
-
 
 @font-face {
-  font-family: 'Netflix Sans';
-  src: url("webfontkit-20250616-143528/netflixsans-bold-webfont.woff2") format('woff2'),
-       url("webfontkit-20250616-143528/netflixsans-bold-webfont.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
+font-family: 'Netflix Sans';
+src: url("webfontkit-20250616-143528/netflixsans-bold-webfont.woff2") format('woff2'),
+     url("webfontkit-20250616-143528/netflixsans-bold-webfont.woff") format('woff');
+font-weight: normal;
+font-style: normal;
 }
 
