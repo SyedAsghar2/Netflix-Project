@@ -165,7 +165,7 @@ img {
 }
 
 .movies-back {
-    height: 5000px;
+    height: 2000px;
     background-color: black;
 }
 
@@ -372,7 +372,7 @@ img {
 
 .faq-section h2 {
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .faq-box {
@@ -396,6 +396,123 @@ img {
 }
 
 
+
+.footer-section {
+    background-color: black;
+    color: gray;
+    font-family: 'Netflix Sans Medium', sans-serif;
+    padding: 40px 20px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.footer-question {
+    margin-bottom: 20px;
+    font-size: 14px;
+
+}
+
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 30px;
+}
+
+.footer-columns ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.footer-columns li {
+    margin: 6px 0;
+    color: gray;
+    cursor: default;
+    transition: color 0.2s ease;
+}
+
+.footer-columns li:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-language {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid gray;
+    padding: 8px 16px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footer-language select {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 14px;
+    appearance: none;
+}
+
+.footer-note {
+    font-size: 12px;
+    color: gray;
+    margin-top: 5px;
+}
+
+.footer-note .footer-link {
+    text-decoration: underline;
+    cursor: default;
+    color: blue;
+}
+
+
+
+.ready-section {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px 20px 30px;
+  }
+  
+  .ready-section p {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .email-form-bottom {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .email-input-bottom {
+    padding: 20px 100px;
+    font-size: 16px;
+    border: 1px solid grey;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+  }
+  
+  .email-input-bottom::placeholder {
+    color: #aaa;
+  }
+  
+  .get-started-bottom {
+    background-color: red;
+    color: white;
+    padding: 20px 80px;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
 
 
 @font-face {
