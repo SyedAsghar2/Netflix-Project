@@ -1,5 +1,5 @@
 body {
-  font-family: 'Netflix Sans', sans-serif;
+  font-family: 'Netflix Sans Bold', sans-serif;
 }
 
 html, body {
@@ -17,13 +17,13 @@ img {
 .background{
   position: relative;
   background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/7968847f-3da9-44b3-8bbb-13a46579881f/web/US-en-20250609-TRIFECTA-perspective_bf732f5c-4fad-4035-9f96-79f38c9579a8_large.jpg');
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
+  background-size: cover; /* Makes the image covers the entire area, cropping excess */
+  background-position: center; /* Centers the visible part of the image */
+  background-repeat: no-repeat; /* Prevents tiling */
   margin: 0;
-  height: 1000px;
+  height: 550px;
   width: 100%;
-  filter: brightness(30%); 
+  filter: brightness(50%); 
 
 }
 
@@ -42,29 +42,29 @@ img {
 
 }
 
-#logo {
-  font-family: 'Netflix Sans';
+.header #logo {
   margin-left: 10px;
-  font-size: 50px;
   color: Red;
   margin-right: auto;
+  font-size: 50px;
+  font-family: 'Netflix Sans Medium';
 }
 
-.lang {
-  font-family: 'Netflix Sans';
+.header .lang {
+  font-family: 'Netflix Sans Bold', sans-serif;
   background-color: transparent;
   color: white;
   height: 35px;
   width: 100px;
 }
 
-.lang-options{
+.header .lang-options{
   background-color: white;
   color: black;
 }
 
-.SignInButton {
-  font-family: 'Netflix Sans';
+.header .signin-button {
+  font-family: 'Netflix Sans Bold', sans-serif;
   background-color: red;
   color:white;
   font-size: 14px;
@@ -73,6 +73,12 @@ img {
   border-radius: 5px;
   border: none;
   margin-right: 20px;
+  transition: all 0.3s ease;
+}
+
+.header .signin-button:hover {
+  background: rgb(229, 9, 20);    
+  cursor: pointer;
 }
 
 .subscription-container{
@@ -80,7 +86,7 @@ img {
   position: absolute;
   max-width: 650px;
   margin: auto;
-  top: 400px;
+  top: 200px;
   right: 0px;
   left: 0px;
   display: flex;
@@ -88,38 +94,69 @@ img {
   align-items: center;
 }
 
-.subscription-title{
+.subscription-container .title h1{
+  font-family: 'Netflix Sans Bold';
   font-size: 55px;
   font-weight: bold;
-  text-align: center;;
+  text-align: center;
+  margin: 0;
+  line-height: 1.2;
 }
 
-.subscription-price{
-  font-size: 25px;
-  font-weight: bold;
+.subscription-container .price{
+  font-family: 'Netflix Sans Medium';
+  font-size: 20px;
   margin: 0px, 0px, 10px;
-  padding: 20px;
+  padding: 10px 20px 20px;
 }
 
-.subscription-description {
+.subscription-container .description {
+  margin-bottom: 10px;
+  font-family: 'Netflix Sans Light';
   font-size: 17px;
 }
 
-#email-inputbox{
-  size: 30px;
+.subscription-container .email{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  max-width: 650px;
+}
+
+.subscription-container .email-inputbox{
   background-color: rgba(0, 0, 0, 0.5);
   color: white;                  
   border: 2px solid #5d4e4f;     
-  padding: 15px 20px;            
-  width: 300px;                  
-  border-radius: 10px;            
-  font-size: 16px; 
+  padding: 12px 20px;
+  height: 30px;
+  width: 370px;           
+  border-radius: 4px;            
+  font-size: 16px;
+}
+
+.subscription-container .email-button{
+  background-color: red;
+  color: white;
+  font-family: 'Netflix Sans Bold', sans-serif;
+  height: 55px;
+  width: 230px;
+  font-size: 24px;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.subscription-container .email-button:hover {
+  background: rgb(229, 9, 20);    
+  cursor: pointer;
 }
 
 #email-button{
   background-color: red;
   color: white;
-  height: 50px;
+  height: 60px;
   width: 200px;
   border-radius: 10px;
   border: none;
@@ -135,42 +172,47 @@ img {
 .small-sub-container {
   color: white;
   position: absolute;
-  top: 1000px;
+  top: 600px;
   max-width: 1000px;
-  margin:auto;
+  margin: auto;
   right: 0px;
   left: 0px;
+  height: 80px;
   display: flex;
-  gap: 10px;
   flex-direction: row;
+  align-items: center;
+  transition: all 0.3s ease;
 }
 
 .small-sub-container .popcorn {
-  min-width: 80px;
+  transform: scale(0.80);
+}
+
+.small-sub-container:hover {
+  transform: scale(1.05);
 }
 
 .small-sub-container .purple-container {
-  min-width: 880px;
-  padding: 20px;
-  background-color: rgb(36, 1, 67 );
+  max-width: 880px;
+  padding: 10px 30px 10px 30px;
+  background: linear-gradient(91deg, #261733, #151a3f);
   font-size: 20px;
   border-radius: 10px;
+  flex-grow: 1;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.small-sub-container .popcorn {
-  background-image: url("./images/popcorn.png");
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat;
-}
-
-
-.purple-container .title {
+.purple-container .deal-container {
+  font-family: 'Netflix Sans Medium';
   font-size: 20px;
   color: white;
+}
+
+.purple-container .deal-container .description {
+  font-family: 'Netflix Sans Light';
+  font-size: 18px;
 }
 
 .small-sub-container .purple-container .learn-more {
@@ -178,157 +220,166 @@ img {
   color: white;
   margin-left: auto;
   height: 40px;
+  width: 110px;
   border-radius: 5px;
-  font-size: 15px;
-  font-family: "Netflix Sans";
-}
-
-
-
-.footer {
-background-color: black;
-color: #aaa;
-padding: 20px 30px;
-font-size: 20px;
-}
-
-.footer-top {
-margin-bottom: 20px;
-}
-
-.footer-links {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-gap: 20px;
-margin-bottom: 30px;
-}
-
-.footer-links ul {
-list-style: none;
-padding: 10;
-cursor: pointer;
-}
-
-.footer-item {
-color: #ffffff;
-display: block;
-margin-bottom: 10px;
-
-}
-
-.footer-item:hover {
-color: white;
-text-decoration: underline;
-}
-
-.footer-lang {
-margin-bottom: 20px;
-}
-
-.footer-lang select {
-background-color: transparent;
-color: rgb(255, 255, 255);
-padding: 10px;
-border: 1px solid #ffffff;
-border-radius: 3px;
-}
-
-.footer-note {
-font-size: 15px;
-color: #555;
-}
-
-.footer-note .footer-item {
-color: #0071eb;
-display: inline;
-font-weight: normal;
-}
-
-.ready-section {
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 50px 20px 30px;
-}
-
-.ready-section p {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
-.email-form-bottom {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.email-input-bottom {
-  padding: 20px 100px;
-  font-size: 16px;
-  border: 1px solid grey;
-  background-color: black;
-  color: white;
-  border-radius: 4px;
- 
-}
-
-.email-input-bottom::placeholder {
-  color: #aaa;
-}
-
-.get-started-bottom {
-  background-color: red;
-  color: white;
-  padding: 20px 100px;
-  font-size: 16px;
-  font-weight: bold;
   border: none;
-  border-radius: 4px;
+  font-size: 15px;
+  font-family: 'Netflix Sans Bold', sans-serif;
+}
+
+.small-sub-container .purple-container .learn-more:hover {
   cursor: pointer;
 }
 
-.faq-section {
-  background-color: black;
-  color: white;
-  padding: 50px 10%;
-  font-size: 24px;
+.tending-container {
+  position: absolute;
+  max-width: 1000px;
+  margin: auto;
+  top: 775px;
+  right: 0px;
+  left: 0px;
 }
 
-.faq-section h2 {
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 30px;
+.tending-container .title {
+  color: white;
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-family: 'Netflix Sans Medium';
 }
 
-.faq-item {
-  background-color: #2d2d2d;
+.tending-container .movies-container {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.tending-container .movies-container .movies {
+  height: 300px;
+  width: 214px;
+  background-size: contain; 
+  background-position: contain; 
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.tending-container .movies-container .movies:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.tending-container .movies-container #movie1 {
+  background-image: url("https://occ-0-621-616.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABTfKPa9GQQYH9sRkSKIh8oVudq3kI3dlgj-XKXNQAnFrkkBk3h2C6UgrR2ZtrneAW-hx0MkocgffgSa2j-jYT69y1ZPp_HARZCQEO_221rIoUVhdUU5OQzamZFjcvvktpn2V.webp?r=1e7");
+}
+
+.tending-container .movies-container #movie2 {
+  background-image: url("https://occ-0-621-616.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABfrQ-ytQxZb4vAuUegqLRC6Mzo4qEMKBNKiYSsEqK16hUyXOUO2f7CZchxO_b4lhknmpf0C2ocJMYF1jChy3YpV3M5Osq7oVADhGKdJWQyaHA50EtvmM0TdxspGTAbQQHctr.webp?r=d36");
+}
+
+.tending-container .movies-container #movie3 {
+  background-image: url("https://occ-0-621-616.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABagezeqlB7WAWwJlmhXWKf9-aZw54m3VufCzyDLFcpKbSZh2AYZORe7bYFMX9Dk51BupVB-2tYCb5zczKHzkwTki0Q8NsfLxwMCDIb4vbY7a5fDnTQRgfi-G-w0mTmpv9x7g.webp?r=645");
+}
+
+.tending-container .movies-container #movie4 {
+  background-image: url("https://occ-0-621-616.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABSrHsOUsQgUgrNvlsG4WLYQFUKNmX8Lu_z5AGt1N2lsz-__buMhtxwFJl9TV1RvnNwF2sw8ujvpFn3hSDqhZ0GzJhIuvGQeXkOM.webp?r=863");
+}
+
+.movies-container .next-movies{
+  height: 100px;
+  width: 25px;
+  font-size:20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  border: none;
   color: white;
-  padding: 25px;
-  margin-bottom: 10px;
+  transition: opacity 400ms ease-in-out;
+}
+
+.movies-container .next-movies:hover{
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.join-reasons-container {
+  position: absolute;
+  top: 1200px;
+  max-width: 1000px;
+  right: 0px;
+  left: 0px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  color: white;
+}
+
+.join-reasons-container .title {
+  font-size: 25px;
+}
+
+.join-reasons-container .reasons-container{
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  border-bottom: 2px solid black;
 }
 
-.faq-item:hover {
-  background-color: #444;
+.join-reasons-container .reasons-container .reasons {
+  height: 300px;
+  width: 200px;
+  padding: 30px 20px 0px 20px;
+  border-radius: 15px;
+  background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);    
+  display: flex;
+  flex-direction: column;
+  gap:15px;
 }
 
-.faq-icon {
-  font-size: 30px;
-  font-weight: bold;
+.join-reasons-container .reasons-container .reasons .reason-title h3{
+  font-family: 'Netflix Sans light';
+  font-size: 24px;
+  margin: 0;
+  line-height: 1.2;
 }
+
+.join-reasons-container .reasons-container .reasons .reason-description p{
+  font-size: 16.5px;
+  line-height: 1.2;
+  margin: 0;
+  font-weight: lighter;
+  font-family: 'Netflix Sans Light';
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.join-reasons-container .reasons-container .reasons .reason-logo{
+  margin-top: auto;
+  margin-bottom: 15px;
+  display:flex;
+  justify-content: flex-end;
+}
+
+
 
 
 @font-face {
-font-family: 'Netflix Sans';
+font-family: 'Netflix Sans Bold';
 src: url("webfontkit-20250616-143528/netflixsans-bold-webfont.woff2") format('woff2'),
      url("webfontkit-20250616-143528/netflixsans-bold-webfont.woff") format('woff');
 font-weight: normal;
 font-style: normal;
 }
 
+@font-face {
+font-family: 'Netflix Sans Medium';
+src: url("webfontkit-20250616-144208/netflixsans-medium-webfont.woff2") format('woff2'),
+     url("webfontkit-20250616-144208/netflixsans-medium-webfont.woff") format('woff');
+font-weight: normal;
+font-style: normal;
+}
 
+@font-face {
+font-family: 'Netflix Sans Light';
+src: url("webfontkit-20250616-144208/netflixsans-light-webfont.woff2") format('woff2'),
+     url("webfontkit-20250616-144208/netflixsans-light-webfont.woff") format('woff');
+font-weight: normal;
+font-style: normal;
+}
